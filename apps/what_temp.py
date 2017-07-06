@@ -18,7 +18,7 @@ def run(robot, channel, user, tokens):
     for each in data:
         cur_temp = each.temp.text
         if float(cur_temp) >= 30:
-            return channel, '현준씨 벌써 %s 도에요 에어컨좀 틀어주세요.' % (cur_temp, cur_temp)
+            return channel, '현준씨 벌써 %s 도에요 에어컨좀 틀어주세요.' % (cur_temp)
         else:
             return channel, '현재의 온도는 %s도 입니다. ' % (cur_temp)
 
