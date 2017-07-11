@@ -8,7 +8,7 @@ import random
 @on_command(['오늘뭐먹지', '메뉴추천', "점심", "배고파", 'menu'])
 def run(robot, channel, user, tokens):
     '''오늘의 점심 메뉴'''
-    with open('/root/honey/apps/menu.list', 'r') as file:
+    with open('./apps/menu.list', 'r') as file:
         menus = file.read().splitlines()
     R = random.Random()
     idx = R.randrange(1,6)

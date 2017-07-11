@@ -8,7 +8,7 @@ import requests
 @on_command(['점심리스트', '점심목록', 'menu_list'])
 def run(robot, channel, user, tokens):
     '''점심 메뉴 리스트'''
-    with open('/root/honey/apps/menu.list', 'r') as file:
+    with open('./apps/menu.list', 'r') as file:
         menus = file.read().splitlines()
         
     message = ""
