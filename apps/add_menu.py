@@ -9,6 +9,6 @@ import random
 def run(robot, channel, user, tokens):
     '''점심 메뉴 추가!!!!'''
     with open('./apps/menu.list', 'a') as file:
-        file.write("%s\n"%tokens[0])
+        file.write("%s\n"%unicode(tokens[0], "utf-8"))
     return channel, "%s 메뉴 추가 완료!!"%tokens[0]
 
